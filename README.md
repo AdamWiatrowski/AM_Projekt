@@ -19,5 +19,5 @@ https://palettes.shecodes.io/palettes/1215#palette
 
 https://www.youtube.com/watch?v=Iq9yQmVOThE - lokalizacja, działa, tylko:
 
-                * w Android Studio, po uruchomieniu urządzenia ustaw sztucznie lokalizację, np. PP :p                                         
-                * korzysta z .LastLocation, przed uruchomieniem aplikacji wejdź w mapy, inaczej będzie null.
+* w Android Studio, po uruchomieniu urządzenia ustaw sztucznie lokalizację, np. PP :p                                         
+* korzysta z .LastLocation, przed uruchomieniem aplikacji wejdź w mapy, inaczej będzie null.
