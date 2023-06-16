@@ -14,3 +14,4 @@ todo:
   * ustawić animację
 
 ========================================================
+https://palettes.shecodes.io/palettes/1215#palette
