@@ -20,8 +20,8 @@ class Splash : AppCompatActivity() {
         imageView.startAnimation(shakeAnimation)
 
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, Login::class.java))
             finish()
-        }, 3000)
+        }, 2000)
     }
 }
