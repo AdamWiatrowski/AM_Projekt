@@ -39,7 +39,7 @@ class Login : AppCompatActivity() {
             db.tagDao().addTag(Tag("Bielizna"))
             db.tagDao().addTag(Tag("Koszule"))
             db.tagDao().addTag(Tag("Rękawiczki"))
-            db.tagDao().addTag(Tag("Szalik"))
+            db.tagDao().addTag(Tag("Szaliki"))
         }
 
         // find your buttons and text fields
