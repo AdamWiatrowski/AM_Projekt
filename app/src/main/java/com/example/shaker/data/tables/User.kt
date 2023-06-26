@@ -1,11 +1,11 @@
-package com.example.shaker.data
+package com.example.shaker.data.tables
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "user_table")
+@Entity(tableName = "users")
 data class User(
     @PrimaryKey
-    val username: String,
+    val login: String,
     val password: String
 )

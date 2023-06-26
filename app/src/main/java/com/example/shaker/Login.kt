@@ -5,8 +5,9 @@ import android.os.Bundle
 import android.widget.Toast
 import android.widget.Button
 import android.widget.EditText
-import com.example.shaker.data.UserDatabase
-import com.example.shaker.data.User
+import com.example.shaker.data.ShakerDatabase
+import com.example.shaker.data.tables.Tag
+import com.example.shaker.data.tables.User
 
 import kotlinx.coroutines.*
 
@@ -15,7 +16,7 @@ import kotlinx.coroutines.flow.first
 
 class Login : AppCompatActivity() {
 
-    private lateinit var db: UserDatabase
+    private lateinit var db: ShakerDatabase
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,7 +24,22 @@ class Login : AppCompatActivity() {
 
         // initialize your database
         CoroutineScope(Dispatchers.IO).launch {
-            db = UserDatabase.getDatabase(applicationContext)
+            db = ShakerDatabase.getDatabase(applicationContext)
+
+            // fill DB with tags
+            db.tagDao().addTag(Tag("Kurtki"))
+            db.tagDao().addTag(Tag("Obuwie"))
+            db.tagDao().addTag(Tag("Krótkie rękawy"))
+            db.tagDao().addTag(Tag("Długie rękawy"))
+            db.tagDao().addTag(Tag("Długie spodnie"))
+            db.tagDao().addTag(Tag("Krótkie spodnie"))
+            db.tagDao().addTag(Tag("Sukienki"))
+            db.tagDao().addTag(Tag("Bluzy"))
+            db.tagDao().addTag(Tag("Skarpety"))
+            db.tagDao().addTag(Tag("Bielizna"))
+            db.tagDao().addTag(Tag("Koszule"))
+            db.tagDao().addTag(Tag("Rękawiczki"))
+            db.tagDao().addTag(Tag("Szalik"))
         }
 
         // find your buttons and text fields
