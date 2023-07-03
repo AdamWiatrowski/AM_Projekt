@@ -1,5 +1,6 @@
 package com.example.shaker
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -97,7 +98,8 @@ class Login : AppCompatActivity() {
                     withContext(Dispatchers.Main) {
                         if (user != null) {
                             Toast.makeText(applicationContext, "Zalogowano!", Toast.LENGTH_SHORT).show()
-                            // przejscie dalej;
+                            startActivity(Intent(applicationContext, MainShakePage::class.java))
+                            finish()
                         } else {
                             Toast.makeText(applicationContext, "Niepoprawny username lub password!", Toast.LENGTH_SHORT).show()
                         }

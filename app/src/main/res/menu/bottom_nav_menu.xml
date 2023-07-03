@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Shaker"
+        android:icon="@drawable/baseline_home_24"
+        android:id="@+id/shaker"/>
+    <item android:title="Outfit"
+        android:icon="@drawable/baseline_person_24"
+        android:id="@+id/outfit"/>
+    <item android:title="Gallery"
+        android:icon="@drawable/baseline_image_24"
+        android:id="@+id/gallery"/>
+</menu>
